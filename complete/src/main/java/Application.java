@@ -19,9 +19,9 @@ public class Application {
     @Bean
     CommandLineRunner init(LibroRepository libroRepository) {
         return args -> {
-            Libro libro1 = new Libro("Nombre Libro 1", "Nombre autor 1", 2017);
-            Libro libro2 = new Libro("Nombre Libro 2", "Nombre autor 2", 2018);
-            Libro libro3 = new Libro("Nombre Libro 3", "Nombre autor 3", 2019);
+            Libro libro1 = new Libro("Fundamentos de Programacion", "Lara, Juan Iruela", 2015); //Editorial: CreateSpace
+            Libro libro2 = new Libro("System Analysis and Design", "Julie E Kendall", 2005); //Editorial: Prentice Hall
+            Libro libro3 = new Libro("Teoría Y Práctica De Administración De Empresas", "Muñoz Bullon Y M Jose Sanchez ", 2019); //Editorial: Civitas
 
             libroRepository.save(libro1);
             libroRepository.save(libro2);
